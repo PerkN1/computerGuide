@@ -1,0 +1,19 @@
+{
+  "name": "computerguide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "keywords": [
+    "nodejs",
+    "js",
+    "heroku"
+  ],
+  "author": "Nick",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^8.3.2"
+  }
+}

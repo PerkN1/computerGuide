@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Courier New', Courier, monospace;
+}
+ body{
+    
+    height: 100%;
+    background-image: url(../images/background.jpg);
+    background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-position: 0 0;
+   min-height: 15.625em;
+   padding: 4em 0 12em;
+   background-repeat: no-repeat;
+   width: 100%;
+   -webkit-background-size: cover;
+   -ms-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   padding: 0;
+
+ }
+
+.logo{
+    width: 172px;
+    height: 150px;
+    cursor: pointer;
+}
+
+.nav{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.nav ul li{
+    list-style: none;
+    display:  inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color:#d8d4cd;
+    text-transform: uppercase;
+
+}
+
+.nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #7286ac;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+
+
+
+.info{
+    width: 100%;
+    position: absolute;
+    top: 48%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #d8d4cd;
+    size: 50%;
+}
+
+.info h1{
+    font-size: 25px;
+    margin-top: 80px;
+    
+}
+
+
+
+/* Part  List */
+.partsInfo h1{
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.partsInfo{
+    text-transform: uppercase;
+    padding: 1px;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #d8d4cd;
+}
+
+.partsInfo .list{
+    padding: 8px 20px;
+    margin: 0px;
+}
+
+
+/* newsletter */
+.newsLetter{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    text-align: center;
+}
+.newsLetter h1{
+    color: #d8d4cd;
+    text-transform: uppercase;
+    font-weight: 100;
+    
+}
+
+.newsLetter input[type = "text"]{
+    border: 0;
+    background: #d8d4cd;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #7286ac;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: rgb(0, 0, 0);
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.newsLetter input[type = "submit"]{
+    border: 0;
+    background: #d8d4cd;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #7286ac;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: rgb(0, 0, 0);
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.sidebar{
+    width: 300px;
+    padding: 0;
+    position: absolute;
+    top: 40%;
+    left: 13%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    text-align: center;
+    color: #d8d4cd;
+    text-transform: uppercase;
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+
+
+/* Footer */
+.footer p{
+   width: 100%;
+   position: absolute;
+   top: 98%;
+   
+   transform: translateY(-50%);
+   text-align: center;
+   color:#d8d4cd;
+}
+
+/* Check Box Styles */
+input[type="checkbox"] {
+    display: none;
+}
+
+label {
+    position: relative;
+}
+
+label::before{
+    content: "";
+    background: url(../images/check.png);
+    background-position: center;
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: -44px;
+    top: -8px;
+
+    transform: scale(0) rotateZ(180deg);
+    transition: all 0.4s cubic-bezier(.54, .01, 0, 1.49);
+}
+
+input[type="checkbox"]:checked + label::before {
+    transform: scale(1) rotateZ(0deg);
+}
+
+.mid p,h2{
+    color: #d8d4cd;
+}
+.contact{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    text-align: center;
+}
+.contact h1{
+    color: #d8d4cd;
+    text-transform: uppercase;
+    font-weight: 100;
+    
+}
+
+.contact input[type = "text"]{
+    border: 0;
+    background: #d8d4cd;
+    display: block;
+    margin: 3px auto;
+    text-align: center;
+    border: 2px solid #7286ac;
+    padding: 14px 10px;
+    width: 200px;
+    height: 150px;
+    outline: none;
+    color: rgb(0, 0, 0);
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.contact input[type = "text"]:focus{
+    width: 280px;
+    border-color: #7286ac;
+}
+
+.contact input[type = "email"]{
+    border: 0;
+    background: #d8d4cd;
+    display: block;
+    margin: 1px auto;
+    text-align: center;
+    border: 2px solid #7286ac;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: rgb(0, 0, 0);
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.contact input[type = "email"]:hover{
+    width: 280px;
+    border-color: #7286ac;
+}
+
+.contact p{
+    text-transform: uppercase;
+}
